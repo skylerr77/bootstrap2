@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        padding: 10%;
+        background-image: radial-gradient(circle at 50% -20.71%, #feffff 0, #efffff 12.5%, #ddfffd 25%, #cafbf7 37.5%, #b5f2f2 50%, #9fe9ee 62.5%, #8ae1ec 75%, #76d9eb 87.5%, #62d1eb 100%);
+    }
+    table{
+        text-align: center;
+        list-style: none;
+    }
+    .contenedor{
+        border: solid 4px blue ;
+        display: flex;
+        padding: 1% 4%;
+    }
+    .derecha{
+        width: 30%;
+        margin-right: 2%;
+    }
+    label{
+        padding-top: 3%;
+        padding-bottom: 3% ;
+    }
+    .izquierda{
+        margin-top: 5% ;
+        width: 70%;
+    }
+    button{
+        margin-top: 5%;
+        margin-left: 5% ;
+        width: 40%;
+    }
+</style>
+<body>
+    <div class="contenedor">
+        <div class="derecha">
+            <div class="row">
+                <div class="col-12">
+                <label for="lenguaje">Lenguaje</label>
+                <input type="text" id="lenguaje" class="form-control">
+                </div>
+                <div class="col-12">
+                <label for="cantidad">Cantidad de programadores</label>
+                <input type="text" id="cantidad" class="form-control">
+                </div>
+                <div class="mb-3 col-pq-2 col-sm-3 col-sm-12">
+                    <label for="comentario" class="form-label">Descripción</label>
+                    <textarea class="form-control" id="comentario" rows="5"></textarea>
+                    <div class="container_btn">
+                        <button type="submit" class="btn btn-primary me-2">Agregar</button>
+                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="izquierda">
+            <table class="table table-dark table-striped table-hover align-middle">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Lenguaje</th>
+                    <th scope="col">Cantidad de programadores</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Javescript</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Python</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>C#</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Ruby</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Java</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Go</td>
+                    <td>300</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</body>
+</html>
